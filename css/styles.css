@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body {
+  background: #ccc;
+  font-family: 'Courier New', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header .title {
+  text-align: center;
+}
+
+header .rule {
+  width: 400px;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+header .rule p {
+  text-align: left;
+  margin: 8px 0;
+}
+
+header .flex {
+  display: flex;
+  justify-content: center;
+}
+
+header .level_box {
+  margin: 1rem 1rem 0 1rem;
+}
+
+header button {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 1rem;
+  background: rgb(253, 253, 120);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: .8;
+}
+
+header button.pressed {
+  background: rgb(174, 174, 89);
+  cursor: unset;
+  pointer-events: none;
+}
+
+header .flex p {
+  text-align: center;
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  margin: 16px auto;
+  opacity: 0;
+}
+
+#container.display {
+  opacity: 1;
+}
+
+#board {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 90%;
+}
+
+#board li {
+  background: #9bdeff;
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0 1px 0 #0088cc;
+  opacity: 1;
+}
+
+/* レベル選択時のスタイル */
+#board li.first {
+  cursor: unset;
+  background: #ccc;
+  box-shadow: none;
+}
+
+#board li.pressed {
+  opacity: .3;
+  box-shadow: none;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+#timer {
+  margin-bottom: 8px;
+  font-size: 20px;
+  text-align: right;
+}
+
+#btn {
+  cursor: pointer;
+  user-select: none;
+  background: #f44336;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px 0 #d1483e;
+}
+
+#btn:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+#answer_box {
+  text-align: center;
+}
+
+#answer_btn {
+  all: unset;
+  padding: 0 16px;
+  background: #3b3b3b;
+  color: #fff;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: .8rem;
+}
+
+#answer_btn:hover {
+  opacity: .9;
+}
+
+#result {
+  text-align: center;
+  color: rgb(204, 2, 2);
+}
