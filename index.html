@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NumberGame</title>
+  <link rel="stylesheet" href="https://matsuda1017.github.io/NumberGame/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <h2>数字タッチゲーム</h2>
+      <div class="rule">
+        <p>➀難易度を選択し、スタートボタンを押してください。</p>
+        <p>➁0から順番に数字を押していきます。</p>
+        <p>➂背景に隠された画像が何か分かったら、<br>
+          　回答を入力し「回答する」ボタンを押してください。</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="level_box">
+        <button class="level" value="3">easy</button>
+        <p>3✕3</p>
+      </div>
+      <div class="level_box">
+        <button class="level" value="5">normal</button>
+        <p>5✕5</p>
+      </div>
+      <div class="level_box">
+        <button class="level" value="7">difficult</button>
+        <p>7✕7</p>
+      </div>
+    </div>
+  </header>
+  <div id="container">
+    <div id="timer">0.0</div>
+    <ul id="board"></ul>
+    <div id="btn">START</div>
+  </div>
+  <div id="answer_box">
+    <input type="text" id="answer_input">
+    <button id="answer_btn">回答する</button>
+  </div>
+  <h2 id="result"></h2>
+  <script src="https://matsuda1017.github.io/NumberGame/js/main.js"></script>
+</body>
+
+</html>
