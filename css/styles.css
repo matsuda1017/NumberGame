@@ -20,12 +20,7 @@ header .rule {
 header .rule p {
   text-align: left;
   margin: 8px 0;
-}
-
-@media(max-width: 450px) {
-  header .rule p {
-    font-size: 14px;
-  }
+  font-size: 14px;
 }
 
 header .flex {
