@@ -24,7 +24,7 @@ header .rule p {
 
 @media(max-width: 450px) {
   header .rule p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
