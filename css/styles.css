@@ -22,6 +22,12 @@ header .rule p {
   margin: 8px 0;
 }
 
+@media(max-width: 450px) {
+  header .rule p {
+    font-size: 14px;
+  }
+}
+
 header .flex {
   display: flex;
   justify-content: center;
